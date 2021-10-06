@@ -1,0 +1,110 @@
+/* Material Design / Design / ... The type system https://material.io/design/typography/the-type-system.html */
+
+:root {
+  --headline: Roboto, sans-serif;
+  --subtitle: Roboto, sans-serif;
+  --body:     Roboto, sans-serif;
+  --button:   Roboto, sans-serif;
+  --caption:  Roboto, sans-serif;
+  --overline: Roboto, sans-serif;
+  /* --thin:     100; */
+  --light:    300;
+  --regular:  400;
+  --medium:   500;
+  /* --bold:     700; */
+  /* --black:    900; */
+}
+
+.headline1 {
+  font-family: var(--headline);
+  font-size: 96px;
+  font-weight: var(--light);
+  letter-spacing: -1.5px;
+}
+
+/* .headline2 {
+  font-family: var(--headline);
+  font-size: 60px;
+  font-weight: var(--light);
+  letter-spacing: -0.5px;
+} */
+
+/* .headline3 {
+  font-family: var(--headline);
+  font-size: 48px;
+  font-weight: var(--regular);
+  letter-spacing: 0px;
+} */
+
+/* .headline4 {
+  font-family: var(--headline);
+  font-size: 34px;
+  font-weight: var(--regular);
+  letter-spacing: 0.25px;
+} */
+
+/* .headline5 {
+  font-family: var(--headline);
+  font-size: 24px;
+  font-weight: var(--regular);
+  letter-spacing: 0px;
+} */
+
+.headline6 {
+  font-family: var(--headline);
+  font-size: 20px;
+  font-weight: var(--medium);
+  letter-spacing: 0.15px;
+}
+
+.subtitle1 {
+  font-family: var(--subtitle);
+  font-size: 16px;
+  font-weight: var(--regular);
+  letter-spacing: 0.15px;
+}
+
+.subtitle2 {
+  font-family: var(--subtitle);
+  font-size: 14px;
+  font-weight: var(--medium);
+  letter-spacing: 0.1px;
+}
+
+.body1 {
+  font-family: var(--body);
+  font-size: 16px;
+  font-weight: var(--regular);
+  letter-spacing: 0.5px;
+}
+
+/* .body2 {
+  font-family: var(--body);
+  font-size: 14px;
+  font-weight: var(--regular);
+  letter-spacing: 0.25px;
+} */
+
+.button {
+  font-family: var(--button);
+  font-size: 14px;
+  font-weight: var(--medium);
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+}
+
+.caption {
+  font-family: var(--caption);
+  font-size: 12px;
+  font-weight: var(--regular);
+  text-transform: uppercase;/* microsoft design wallpapers */
+  letter-spacing: 0.4px;
+}
+
+.overline {
+  font-family: var(--overline);
+  font-size: 10px;
+  font-weight: var(--regular);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

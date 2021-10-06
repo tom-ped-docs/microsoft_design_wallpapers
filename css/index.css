@@ -1,0 +1,306 @@
+:root {
+  --feature-width: 75px;
+  --feature-height: 125px;
+}
+
+body {
+  height: 100%;
+  /* padding: 0; */
+  /* margin: 0; */
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+/* ------------------------- feature ------------------------- */
+
+.headline1,
+.headline6,
+.body1,
+.subtitle1,
+.subtitle2 {
+  color: #fff;
+}
+
+.feature_1 {
+  background-color: #000;
+}
+
+.feature_2 {
+  top: 75%;
+}
+
+.feature_3 {
+  height: 90vh;
+}
+
+.image_1,
+.image_2,
+.image_3,
+.image_4 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.image_1 {
+  background-image: url("../assets/webp/2000_1500_gray_200.webp");
+  filter: blur(1px);
+  opacity: .5;
+}
+
+.image_2 { background-image: url("../assets/webp/2000_1500_gray_800.webp"); }
+.image_3 { background-image: url("../assets/webp/2000_1500_gray_200.webp"); }
+
+.image_1_lg,
+.image_logo_microsoft {
+  background-repeat: no-repeat;
+  /* background-attachment: scroll; */
+  background-position: center center;
+  background-size: cover;
+}
+
+.image_1_lg {
+  height: 60vh;
+  background-image: url("../assets/webp/2000_1500_gray_200.webp");
+  box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132), 0 .3px .9px 0 rgba(0, 0, 0, .108);/* .ms-depth-4 */
+}
+
+.image_logo_microsoft {
+  width: 24px;
+  height: 24px;
+  /* background-image: url("../assets/svg/logo_microsoft.svg"); */
+  background-image: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><defs><style>.cls-1{fill:%23fff;}.cls-2{fill:%23fff;}.cls-3{fill:%23fff;}.cls-4{fill:%23fff;}</style></defs><title>microsoft-icon</title><rect class='cls-1' width='11.41' height='11.41'/><rect class='cls-2' x='12.59' width='11.41' height='11.41'/><rect class='cls-3' y='12.59' width='11.41' height='11.41'/><rect class='cls-4' x='12.59' y='12.59' width='11.41' height='11.41'/></svg>");
+}
+
+/* ----- top_start ----- */
+
+.top_start_1 {
+  width: var(--feature-width);
+  height: var(--feature-height);
+}
+
+.top_start_2 {
+  background-color: #000;
+}
+
+.top_start_3,
+.top_start_4,
+.top_start_5 {
+  z-index: 20;
+}
+
+.top_start_3 {
+  top: -25%;
+}
+
+.top_start_4 {
+  margin-right: .5rem;
+}
+
+.top_start_5 {
+  top: 75%;
+  width: 32px;
+  height: 1px;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.top_start_6,
+.top_start_7 {
+  z-index: 10;
+  border: 1px solid #000;
+}
+
+.top_start_6 {
+  top: 8px;
+  left: 8px;
+}
+
+.top_start_7 {
+  top: 16px;
+  left: 16px;
+}
+
+/* ----- top_end, bottom_start ----- */
+
+.top_end_1,
+.bottom_start_1 {
+  width: calc(var(--feature-height) * 2);
+  height: calc(var(--feature-width) * 1);
+  transform-origin: top left;
+}
+
+.top_end_1 {
+  right: calc(var(--feature-height) * -2);
+  transform: rotate(90deg);
+}
+
+.bottom_start_1 {
+  bottom: calc(var(--feature-width) * -1);
+  transform: rotate(-90deg);
+}
+
+.top_end_1::before,
+.top_end_1::after,
+.bottom_start_1::before,
+.bottom_start_1::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.top_end_1::before,
+.bottom_start_1::before {
+  width: 16px;
+  height: 1px;
+}
+
+.top_end_1::after,
+.bottom_start_1::after {
+  width: 1px;
+  height: 16px;
+}
+
+.light::before,
+.light::after { background-color: #000; }
+
+.light .caption { color: #000; }
+
+.dark::before,
+.dark::after { background-color: #fff; }
+
+.dark .caption { color: #fff; }
+
+/* ----- bottom-end ----- */
+
+.bottom_end_1 {
+  width: var(--feature-height);
+  height: var(--feature-width);
+}
+
+.bottom_end_2 {
+  background-color: #000;
+  border-radius: 4px;
+}
+
+.image_arrow_download {
+  width: 48px;
+  height: 48px;
+  /* background-image: url("../assets/svg/arrow_download_48_regular.svg"); */
+  background-image: url("data:image/svg+xml,<svg width='48' height='48' viewBox='0 0 48 48' fill='%23fff' xmlns='http://www.w3.org/2000/svg'><path d='M12.25 39.5h23.5a1.25 1.25 0 01.13 2.5H12.25a1.25 1.25 0 01-.13-2.5h23.63-23.5zM23.62 6h.13c.65 0 1.18.5 1.24 1.12l.01.13v24.29l5.65-5.65a1.25 1.25 0 111.76 1.77l-7.77 7.78c-.5.49-1.28.49-1.77 0l-7.78-7.78a1.25 1.25 0 011.77-1.77l5.64 5.65V7.25c0-.65.5-1.18 1.12-1.24l.13-.01h-.13z'/></svg>");
+}
+
+/* ------------------------- grid ------------------------- */
+
+.overline {
+  color: #000;
+}
+
+.grid_1.headline1 {
+  color: #000;
+}
+
+.grid_1::before {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #000;
+}
+
+.grid_2 {
+  height: 33vh;
+}
+
+.image_1_sm,
+.image_2_sm,
+.image_3_sm,
+.image_4_sm {
+  z-index: 20;
+  background-repeat: no-repeat;
+  /* background-attachment: scroll; */
+  background-position: center center;
+  background-size: cover;
+}
+
+.image_1_sm { background-image: url("../assets/webp/2000_1500_gray_200.webp"); }
+.image_2_sm { background-image: url("../assets/webp/2000_1500_gray_800.webp"); }
+
+.grid_3,
+.grid_4 {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border: 1px solid #000;
+  opacity: 0;
+  transition-timing-function: linear;
+  transition-duration: 150ms;
+  transition-property: top, left, opacity;
+}
+
+.grid_3_hover {
+  top: 8px;
+  left: 8px;
+  opacity: 1;
+}
+
+.grid_4_hover {
+  top: 16px;
+  left: 16px;
+  opacity: 1;
+}
+
+.grid_button {
+  height: 75px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transition-property: color, background-color;
+}
+
+.grid_button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* ------------------------- footer ------------------------- */
+
+.subtitle2:hover {
+  color: #fff;
+}
+
+.footer_1 {
+  background-color: #000;
+}
+
+.footer_2::before {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #fff;
+  opacity: 0;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transition-property: bottom, opacity;
+}
+
+.footer_2:hover::before {
+  bottom: -2px;
+  opacity: 1;
+}
